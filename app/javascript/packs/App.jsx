@@ -5,27 +5,27 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
-import styles from './Novo.module.scss'
-import logo from '../assets/ritu.png'
+import { Novo } from './Novo';
 
-const Hello = props => (
-  <div className={styles.raul}>
-    <img src={logo} alt="" />
+
+const App = props => (
+  <div>
+    <Novo />
   </div>
 
 )
 
-Hello.defaultProps = {
+App.defaultProps = {
   name: 'David'
 }
 
-Hello.propTypes = {
+App.propTypes = {
   name: PropTypes.string
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Hello name="React" />,
+    <App name="React" />,
     document.body.appendChild(document.createElement('div')),
   )
 })
