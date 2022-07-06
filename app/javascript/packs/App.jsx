@@ -5,12 +5,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
-import { Novo } from './Novo';
 
+import Navbar from './components/Navbar'
+import Banner from './components/Banner'
+import styles from './App.module.scss'
 
 const App = props => (
   <div>
-    <Novo />
+    <Navbar />
+    <Banner />
+    <div className={styles.wrapper}>
+
+    </div>
   </div>
 
 )
@@ -22,10 +28,3 @@ App.defaultProps = {
 App.propTypes = {
   name: PropTypes.string
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(
-    <App name="React" />,
-    document.body.appendChild(document.createElement('div')),
-  )
-})
