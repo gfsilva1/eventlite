@@ -1,5 +1,9 @@
 {
   "name": "eventlite",
+  "description": "a really cool app",
+  "engines": {
+  "node": "16.x"
+  },
   "private": true,
   "dependencies": {
     "@babel/preset-react": "^7.18.6",
