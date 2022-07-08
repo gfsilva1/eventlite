@@ -1,16 +1,36 @@
 .banner {
   color: white;
-  height: 90vh;
+  height: 60vh;
   padding: 0;
 }
 
 .banner img {
   height: 90vh;
-  width: 100%;
-  object-fit: cover;
-
+  width: 50%;
 }
 
 h1 {
   margin-top: 0px;
+  font-family: 'Bebas Neue',cursive;
+}
+
+.disclaimer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  font-size: larger;
+}
+
+span {
+  color:#65CB81;
+}
+
+p {
+  font-size: small;
+  color: whitesmoke;
+}
+
+button {
+  background-color:#65CB81;
+  border-radius:4px;
 }

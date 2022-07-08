@@ -11,10 +11,15 @@ const Banner = props => (
                 alignItems: `center`,
                 backgroundImage: `url(${passistas})`,
                 backgroundSize: `cover`,
-                height: `90vh`
+                height: `70vh`,
                 }}>
-      <h1>FEEL THE SENSATION OF</h1>
-      <h1>CABOCLINHO</h1>
+      <div className={styles.disclaimer}>
+        <h1>FEEL THE SENSATION OF</h1>
+        <h1> <span>CABOCLINHO</span> ANYWHERE</h1>
+        <p>Wide selection of RITUS with the best audio and visual quality</p>
+        <button><a href="#">Join Now</a></button>
+        <button><a href="#">Learn More</a></button>
+      </div>
     </div>
   </div>
 )
